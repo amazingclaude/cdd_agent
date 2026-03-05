@@ -1,0 +1,8 @@
+
+3.1 why some text in  st.write(story.get("summary")) are presented weirdly as italic?
+
+3.2 Also can you not using the multi tab design for the scope of the red flags? It is difficult for user to click the redflag to formulate summary.
+
+3.3 I find the metadata input area is very confusing. there is tick box, I don't know what the tick box's purpose. also if I click an empty cell write something, and later delete the content, it shows as None, I am not sure if this will create extra things in the metadata such as {"country": "India", "additional_information": "CIN:L22210MH1995PLC084781","":""} 
+
+3.4 please avoid the dropdown bar for the metadata area, user should be able to freely do the input

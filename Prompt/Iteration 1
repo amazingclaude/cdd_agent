@@ -1,0 +1,325 @@
+I wrote below AI Agent powered adverse media screening tool.  Now I need to build a prototype with UI for the user to use.
+
+my idea:
+1) the user can input the search entity name, with some metadata.
+2) the returned json results is nicely presented in the dashboard.
+3) the returned results should be nicely stored, for demo purpose, just find a easy storage solution for the time being
+4) for returned redflag list, user can select some of them (or all of them), and click a button to trigger AI to write summarization report. for demo purpose, just create the button without building the summarization function. but leave an interface for future development.
+
+
+import json
+from typing import List, Dict, Any
+
+from openai import OpenAI
+from criteria_config import RED_FLAG_DEFINITIONS
+
+client = OpenAI()
+MAX_STORIES=1
+
+CHECKING_SCOPES: Dict[str, str] = {
+    "Bribery/Things of Value":"Bribery or donations of things of value allegations",
+    "Criminal Behavior": "Criminal allegations, fraud, money laundering, Anticompetitive Behavior"
+        
+    # "Financial Misconduct",
+    # "Regulatory Breaches",
+    # "Sanctions",
+    # "ESG Controversies",
+    # "PEP Exposure",
+}
+
+
+def run_cdd_agent(entity_name: str, metadata: Dict[str, Any],checking_scopes: Optional[Dict[str, str]] = CHECKING_SCOPES, max_stories: int=MAX_STORIES) -> List[Dict[str, Any]]:
+    all_results: List[Dict[str, Any]] = []
+
+    for scope_key, scope_context in checking_scopes.items():
+        story_list = adverse_media_search(
+            entity_name=entity_name,
+            scope=scope_context,
+            metadata=metadata,
+            max_stories=max_stories,
+        )
+
+        red_flag_criteria = get_red_flag_criteria(scope_key)
+
+        scored_stories: List[Dict[str, Any]] = []
+        for story in story_list:
+            matched_flag = match_story_against_criteria(
+                summary=story["summary"],
+                criteria=red_flag_criteria,
+                entity_name=entity_name,
+            )
+            scored_stories.append({**story, **matched_flag})
+
+        all_results.append(
+            {
+                "scope": scope_key,
+                "stories": scored_stories,
+            }
+        )
+
+    return all_results
+
+
+def adverse_media_search(
+    entity_name: str,
+    scope: str,
+    metadata: Dict[str, Any],
+    max_stories: int,
+) -> List[Dict[str, Any]]:
+
+    system_prompt = f"""
+You are an adverse media screening assistant for Customer Due Diligence (CDD).
+
+Task:
+- For the given entity and risk scope, search the web for recent and relevant news.
+- Focus on reputable and credible sources (major news outlets, regulators, courts, government bodies).
+- De-duplicate highly similar articles and cluster them into unique "stories".
+- A story = a single real-world event or allegation.
+- For each story, produce a factual, neutral, compliance-style summary.
+- Include up to three high-quality sources per story.
+
+Output:
+- STRICTLY valid JSON. No commentary, no markdown, no trailing commas.
+
+{{
+  "stories": [
+    {{
+      "headline": "short headline",
+      "summary": "3–6 sentence risk-focused summary in neutral, compliance style.",
+      "sources": [
+        {{
+          "url": "https://example.com/article1",
+          "source_name": "Reuters",
+          "published_date": "YYYY-MM-DD"
+        }}
+      ]
+    }}
+  ]
+}}
+
+Rules:
+- Use the web_search tool for all external factual retrieval.
+- Do NOT fabricate URLs, publishers, or dates. Only return what web_search returns.
+- If a source does not provide a date, use null.
+- If a source name is missing, infer from domain.
+- Only include up to {max_stories} stories, sorted by risk relevance.
+- Prefer articles from the last 5 years unless older events are still risk-relevant.
+- If nothing credible is found, return {{"stories": []}}.
+
+"""
+
+    user_prompt = {
+        "role": "user",
+        "content": (
+            "Perform adverse media search.\n\n"
+            f"Entity name: {entity_name}\n"
+            f"Scope: {scope}\n"
+            "Metadata (free-form JSON, may include country, sector, ID, etc.):\n"
+            f"{json.dumps(metadata, ensure_ascii=False)}"
+        ),
+    }
+
+    response = client.responses.create(
+        model="gpt-5.1",             
+        tools=[{"type": "web_search"}],
+        input=[
+            {"role": "system", "content": system_prompt},
+            user_prompt,
+        ],
+        temperature=0.1,
+    )
+
+    # Extract the final assistant message text (there may be tool call blocks before)
+    assistant_blocks = [b for b in response.output if b.type == "message"]
+    if not assistant_blocks:
+        return []
+
+    assistant_msg = assistant_blocks[-1]
+    text_chunks = [
+        c.text for c in assistant_msg.content
+        if getattr(c, "type", None) == "output_text"
+    ]
+    raw_text = "".join(text_chunks).strip()
+
+    try:
+        data = json.loads(raw_text)
+    except json.JSONDecodeError:
+        # In production you might log raw_text and/or try to repair with another model call
+        return []
+
+    stories = data.get("stories", []) or []
+
+    cleaned: List[Dict[str, Any]] = []
+    for s in stories:
+        cleaned.append(
+            {
+                "headline": s.get("headline"),
+                "summary": s.get("summary"),
+                "sources": s.get("sources", []),
+            }
+        )
+
+    return cleaned
+
+
+def get_red_flag_criteria(scope: str) -> List[Dict[str, Any]]:
+    relevant: List[Dict[str, Any]] = []
+
+    for rf in RED_FLAG_DEFINITIONS:
+        if rf.get("scope") == scope:
+            relevant.append(rf)
+    return relevant
+
+def match_story_against_criteria(
+    summary: str,
+    criteria: List[Dict[str, Any]],
+    entity_name: str,
+) -> Dict[str, Any]:
+    
+    if not criteria or not summary:
+        return {
+            "best_flag_code": None,
+            "best_flag_name": None,
+            "matched_flags": [],
+            "scoring_rationale": "No criteria or empty story summary.",
+        }
+
+    criteria_json = json.dumps(criteria, ensure_ascii=False)
+
+    system_prompt = """
+You are a specialised compliance analyst for Customer Due Diligence (CDD).
+
+Task:
+- You receive:
+  1) An entity name
+  2) A risk scope/category
+  3) A short news story summary about that entity
+  4) A list of red flag definitions for that scope
+
+- Determine which (if any) red flags are indicated by the story.
+- Only consider the provided red flag definitions; DO NOT invent new ones.
+
+Output:
+- Return STRICT JSON with NO commentary and this exact structure:
+
+{
+  "matched_flags": [
+    {
+      "code": "flag ID from the input",
+      "name": "name of the red flag",
+      "rationale": "1–3 sentences explaining why this story fits this flag"
+    }
+  ],
+}
+
+Important:
+- If no flags apply, set:
+  {
+  "matched_flags": [
+    {
+      "code": null,
+      "name": null,
+      "rationale": "explain why no flags matched"
+    }
+  ],
+}
+"""
+
+    user_content = (
+        "Evaluate the story against the red-flag criteria.\n\n"
+        f"Entity name: {entity_name}\n"
+        "Story summary:\n"
+        f"\"\"\"{summary}\"\"\"\n\n"
+        "Red flag definitions (JSON list):\n"
+        f"{criteria_json}\n"
+    )
+
+    response = client.responses.create(
+        model="gpt-5-mini",
+        input=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ],
+        # temperature=0.0,
+    )
+
+    #The returned response contains a lot of irrelevant information (related to the API call), we need to clean it up
+    assistant_blocks = [b for b in response.output if b.type == "message"]
+    if not assistant_blocks:
+        return {
+            "matched_flags": [],
+        }
+
+    assistant_msg = assistant_blocks[-1]
+    text_chunks = [
+        c.text for c in assistant_msg.content
+        if getattr(c, "type", None) == "output_text"
+    ]
+    raw_text = "".join(text_chunks).strip()
+
+    try:
+        parsed = json.loads(raw_text)
+    except json.JSONDecodeError:
+        return {
+            "matched_flags": [],
+        }
+
+    matched_flags = parsed.get("matched_flags") or []
+
+    cleaned_flags = []
+    for mf in matched_flags:
+        try:
+            code = mf.get("code")
+            name = mf.get("name")
+            rationale = mf.get("rationale") or ""
+        except Exception:
+            continue
+
+
+        cleaned_flags.append(
+            {
+                "code": code,
+                "name": name,
+                "rationale": rationale,
+            }
+        )
+
+    return {
+        "matched_flags": cleaned_flags,
+    }
+
+
+
+
+the returned results looks like below
+
+[{'scope': 'Bribery/Things of Value',
+  'stories': [{'headline': 'some text',
+    'summary': 'some text',
+    'sources': [{'url': 'https://...',
+      'source_name': 'The Indian Express',
+      'published_date': '2023-06-30'},
+     {'url': 'https://...',
+      'source_name': 'The Financial Express',
+      'published_date': '2023-06-30'},
+     {'url': 'https://...',
+      'source_name': 'The New Indian Express',
+      'published_date': '2023-10-16'}],
+    'matched_flags': [{'code': 'BRI_01',
+      'name': 'Investigations or Allegations of Bribery',
+      'rationale': 'some text'}]}]},
+ {'scope': 'Criminal Behavior',
+  'stories': [{'headline': 'some text',
+    'summary': 'some text',
+    'sources': [{'url': 'https://...',
+      'source_name': 'Business Standard',
+      'published_date': '2023-06-23'},
+     {'url': 'https://...',
+      'source_name': 'The Indian Express',
+      'published_date': '2023-06-30'},
+     {'url': 'https://...',
+      'source_name': 'The Financial Express',
+      'published_date': '2023-06-30'}],
+    'matched_flags': [{'code': 'CRI_01',
+      'name': 'Investigations or Allegations of Criminal Behavior',
+      'rationale': "some text"}]}]}]

@@ -1,0 +1,649 @@
+[
+    {
+        "timestamp": "2025-11-26T20:56:59.046729",
+        "entity": "Adani Group",
+        "metadata": {
+            "country": "India",
+            "sector": "Infrastructure",
+            "risk_level": "High"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "U.S. fraud and bribery case over alleged $250m+ payments to Indian officials for Adani solar projects",
+                        "summary": "U.S. federal prosecutors and regulators have brought fraud and bribery charges against Gautam Adani and several associates in connection with Adani Group renewable energy projects. Authorities allege that Adani-linked entities orchestrated a scheme to pay or promise more than $250 million in bribes to Indian government officials to secure large solar power supply contracts and related financing, while concealing these payments from investors. The alleged misconduct includes falsifying records, misrepresenting the strength of anti\u2011bribery compliance controls, and misleading U.S. investors about adherence to anti\u2011corruption laws. The case is being pursued by the U.S. Department of Justice and the Securities and Exchange Commission, and has led to significant reputational and contractual fallout for the group, including foreign counterparties reviewing or cancelling deals. Adani and the Adani Group deny the allegations, characterizing the charges as baseless and affirming their commitment to regulatory compliance.",
+                        "sources": [
+                            {
+                                "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/gautam-adani-charged-with-over-250-million-bribery-fraud-details-of-the-case-and-other-accused-revealed/articleshow/115508377.cms",
+                                "source_name": "The Economic Times",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://apnews.com/article/c273ba4d7bec43e61b2c5e52c7553a7d",
+                                "source_name": "AP News",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.theguardian.com/world/2025/feb/12/tycoon-profited-after-india-relaxed-border-security-rules-for-energy-park",
+                                "source_name": "The Guardian",
+                                "published_date": "2025-02-12"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "U.S. federal prosecutors and regulators have brought fraud and bribery charges alleging Adani-linked entities orchestrated a scheme to pay or promise more than $250 million in bribes to Indian government officials; this is a direct allegation and investigation of bribery."
+                            },
+                            {
+                                "code": "BRI_02",
+                                "name": "Entity has Provided Things of Value to a Government Official or Organization",
+                                "rationale": "The allegations specifically describe payments and promises of substantial bribes to government officials to secure solar contracts and financing, meeting the inclusion criteria for providing things of value to officials to obtain business advantage."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "Hindenburg Research allegations of fraud and market manipulation at Adani Group and subsequent SEBI exoneration",
+                        "summary": "In January 2023, U.S. short-seller Hindenburg Research published a report alleging that the Adani Group engaged in long-running stock manipulation, accounting fraud, and money laundering through a network of offshore shell entities in jurisdictions such as Mauritius, the UAE, Cyprus, Singapore, and various Caribbean islands. The report claimed that these entities, allegedly linked to Vinod Adani and other family members, were used to park stock, route funds through tax havens, and artificially inflate the share prices and financial position of listed Adani companies, raising serious concerns about related-party transactions, disclosure failures, and potential breaches of securities and anti\u2013money laundering norms. The allegations triggered a sharp sell-off in Adani Group stocks, eroding over $100\u2013150 billion in market value and prompting investigations by India\u2019s securities regulator SEBI and scrutiny by the Supreme Court of India. Adani Group consistently denied the accusations as baseless, politically motivated, and aimed at profiteering, asserting that its offshore structures and disclosures complied with applicable laws. In September 2025, following its probe into specific transactions and related-party issues highlighted by Hindenburg, SEBI issued orders dismissing the key stock-manipulation and disclosure allegations against Gautam Adani and several group companies, concluding that the transactions examined did not qualify as undisclosed related-party dealings and that Hindenburg\u2019s claims were \u201cnot established,\u201d effectively exonerating the group from those particular market-manipulation charges while leaving the broader controversy and reputational risks in the public domain.",
+                        "sources": [
+                            {
+                                "url": "https://www.businesstoday.in/latest/corporate/story/adani-group-engaged-in-stock-manipulation-accounting-fraud-over-decades-hindenburg-report-367510-2023-01-25",
+                                "source_name": "Business Today",
+                                "published_date": "2023-01-25"
+                            },
+                            {
+                                "url": "https://www.reuters.com/legal/government/india-markets-regulator-dismisses-hindenburgs-manipulation-allegations-against-2025-09-18/",
+                                "source_name": "Reuters",
+                                "published_date": "2025-09-18"
+                            },
+                            {
+                                "url": "https://www.moneycontrol.com/news/business/markets/sebi-exonerates-gautam-adani-and-others-in-hindenburg-case-13558152.html",
+                                "source_name": "Moneycontrol",
+                                "published_date": "2025-09-18"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "The Hindenburg report alleged long-running stock manipulation, accounting fraud and money laundering via a network of offshore shell entities, and these claims prompted investigations by SEBI and scrutiny by the Supreme Court \u2014 fitting the inclusion of credible allegations and regulatory probes for fraud/AML. Although SEBI later issued orders in September 2025 dismissing the key manipulation and disclosure allegations against the group, the story nonetheless documents significant allegations and official investigations relevant to criminal/financial integrity risk."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-11-26T21:25:29.679131",
+        "entity": "Adani Group",
+        "metadata": {
+            "Country": "India",
+            "Sector": "Infrastructure",
+            "Internal ID": "CUST-00123",
+            "null": null
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "U.S. indictment alleges Adani Group executives paid $265m in bribes to Indian officials to secure solar power contracts",
+                        "summary": "In November 2024, U.S. federal prosecutors in the Eastern District of New York unsealed a five\u2011count indictment charging Gautam Adani, senior Adani Group and Adani Green Energy executives, and associates with conspiracy to violate the Foreign Corrupt Practices Act, securities fraud, and related offenses. Prosecutors and the U.S. Securities and Exchange Commission allege that between roughly 2020 and 2024, Adani and colleagues promised or paid more than $250\u2013265 million (approximately Rs 2,029 crore) in bribes to Indian state officials in Andhra Pradesh, Odisha, Tamil Nadu, Jammu & Kashmir, and Chhattisgarh to induce state electricity distribution companies to enter into power sale agreements under Solar Energy Corporation of India (SECI) tenders. The alleged scheme was intended to secure up to 12 GW of solar power contracts and generate over $2 billion in profits, while Adani entities raised more than $3 billion from international and U.S. investors through loans and bond offerings that allegedly contained false and misleading anti\u2011bribery and compliance representations. The indictment describes detailed tracking of bribe amounts by senior executives, use of code names for key individuals, and alleged obstruction of justice, including deletion of evidence. Adani Group and Adani Green have publicly denied the allegations as baseless, and an internal review commissioned by Adani Green reported no irregularities, but U.S. criminal and SEC civil proceedings remain ongoing and have triggered significant market, regulatory, and reputational risk for the group.",
+                        "sources": [
+                            {
+                                "url": "https://www.aljazeera.com/news/2024/11/22/why-has-indian-billionaire-gautam-adani-been-charged-in-a-us-bribery-case",
+                                "source_name": "Al Jazeera",
+                                "published_date": "2024-11-22"
+                            },
+                            {
+                                "url": "https://economictimes.indiatimes.com/news/india/adani-bribery-scandal-us-indictment-names-odisha-andhra-pradesh-jk-tamil-nadu-and-chhattisgarh/articleshow/115523161.cms",
+                                "source_name": "The Economic Times",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.indiatoday.in/india/story/gautam-adani-charged-us-bribery-fraud-solar-power-contracts-what-is-the-case-2636961-2024-11-21",
+                                "source_name": "India Today",
+                                "published_date": "2024-11-21"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "The unsealed U.S. indictment and SEC allegations accuse Gautam Adani, senior Adani Group executives and associates of conspiring to pay roughly $250\u2013265 million in bribes to Indian state officials between 2020 and 2024 to secure solar power contracts, which is a direct allegation/investigation of bribery involving public officials."
+                            },
+                            {
+                                "code": "BRI_02",
+                                "name": "Entity has Provided Things of Value to a Government Official or Organization",
+                                "rationale": "The allegations describe payments characterized as bribes to state officials to induce state electricity distribution companies to enter power sale agreements, which indicates provision of things of value to government officials linked to obtaining a business advantage."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "Hindenburg Research allegations of fraud and market manipulation against Adani Group and subsequent regulatory findings",
+                        "summary": "In January 2023, U.S. short-seller Hindenburg Research published a report accusing the Adani Group of brazen stock manipulation, accounting fraud, use of offshore shell entities, and other corporate governance failures, triggering a sharp sell-off that wiped tens of billions of dollars from the conglomerate\u2019s market value. Adani Group issued a detailed rebuttal, characterising the report as malicious, misleading, and a calculated attack on India, and denying all allegations of fraud or market abuse. In August 2024, Hindenburg released a follow\u2011up report alleging that India\u2019s markets regulator SEBI and its chair had links to offshore funds supposedly involved in an Adani-related money siphoning scheme; Adani again rejected these claims as recycled, discredited allegations and an attempt at manipulation. In January 2024, India\u2019s Supreme Court dismissed petitions seeking a court\u2011monitored probe, and in September 2025 SEBI concluded, in two formal orders, that the transactions examined did not constitute related\u2011party dealings, found no fraud or unfair trade practice, and dropped proceedings against Adani Group companies. Separately, the U.S. International Development Finance Corp stated in 2023 that Hindenburg\u2019s fraud allegations were not relevant to its due diligence on an Adani Ports project, and proceeded with financing, further underlining that multiple official reviews did not substantiate the short\u2011seller\u2019s core fraud and market\u2011manipulation claims.",
+                        "sources": [
+                            {
+                                "url": "https://www.business-standard.com/article/companies/adani-group-says-allegations-made-in-hindenburg-report-stale-and-baseless-123012500772_1.html",
+                                "source_name": "Business Standard",
+                                "published_date": "2023-01-25"
+                            },
+                            {
+                                "url": "https://www.ndtv.com/india-news/sebi-dismisses-hindenburgs-manipulation-allegations-against-adani-group-companies-9301357",
+                                "source_name": "NDTV",
+                                "published_date": "2025-09-18"
+                            },
+                            {
+                                "url": "https://www.indiatoday.in/business/story/us-government-says-hindenburg-research-allegations-into-adani-group-not-relevant-2472106-2023-12-05",
+                                "source_name": "India Today",
+                                "published_date": "2023-12-05"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "Hindenburg Research publicly accused Adani Group of accounting fraud, brazen stock manipulation and use of offshore shell entities and alleged a money\u2011siphoning scheme \u2014 allegations of fraud/misconduct that prompted market reaction and regulatory/legal scrutiny, even though subsequent SEBI orders and court action did not ultimately find fraud."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-11-26T22:41:02.893099",
+        "entity": "Adani Group",
+        "metadata": {
+            "Country": "India",
+            "Sector": "Infrastructure",
+            "": "",
+            "null": null
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "U.S. indictment alleges Adani Group executives paid over $250m in bribes to Indian officials for solar contracts",
+                        "summary": "On 20 November 2024, U.S. federal prosecutors in the Eastern District of New York unsealed a five\u2011count indictment charging Gautam S. Adani, his nephew Sagar R. Adani, and other senior executives of Adani Green Energy with conspiracies to commit securities and wire fraud and substantive securities fraud. The indictment alleges that between 2020 and 2024, the executives orchestrated a scheme to pay or promise to pay more than $250 million in bribes to Indian government officials to secure large solar energy supply contracts and related state power purchase commitments. Prosecutors further allege that the defendants concealed the bribery scheme from U.S. and international investors while raising billions of dollars, including at least $175 million from U.S. investors, by making false and misleading statements about anti\u2011bribery and compliance practices. Parallel civil charges were filed by the U.S. Securities and Exchange Commission, and arrest warrants were issued for Gautam and Sagar Adani, with U.S. authorities seeking assistance from Indian counterparts. The Adani Group and Adani Green have publicly denied the allegations as baseless, commissioned an independent review that they say found no irregularities, and stated that they are compliant with applicable laws while the U.S. proceedings remain ongoing.",
+                        "sources": [
+                            {
+                                "url": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted",
+                                "source_name": "U.S. Department of Justice",
+                                "published_date": "2024-11-20"
+                            },
+                            {
+                                "url": "https://www.cnbc.com/2024/11/20/billionaire-gautam-adani-charged-in-new-york-with-massive-fraud.html",
+                                "source_name": "CNBC",
+                                "published_date": "2024-11-20"
+                            },
+                            {
+                                "url": "https://www.reuters.com/business/energy/indias-adani-green-says-independent-review-us-indictment-found-no-irregularities-2025-04-28/",
+                                "source_name": "Reuters",
+                                "published_date": "2025-04-28"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "The unsealed U.S. indictment alleges that Adani executives orchestrated a scheme to pay or promise over $250 million in bribes to Indian government officials to secure contracts, and prosecutors allege concealment of the scheme from investors; these are direct allegations/investigations of bribery involving public officials. The matter has also resulted in criminal charges, parallel SEC civil charges, and arrest warrants, fitting the inclusion criteria for BRI_01."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "U.S. fraud and bribery indictment against Gautam Adani and senior Adani Group executives over solar contracts",
+                        "summary": "On 20 November 2024, U.S. federal prosecutors in the Eastern District of New York unsealed a five\u2011count criminal indictment charging Gautam S. Adani, chairman of the Adani Group, and seven other senior executives with conspiracies to commit securities and wire fraud, substantive securities fraud, and conspiracy to violate the Foreign Corrupt Practices Act. Prosecutors allege that between 2020 and 2024 the defendants agreed to pay or promise more than $250\u2013265 million in bribes to Indian government officials to secure long\u2011term solar energy supply contracts expected to generate around $2 billion in profits, while raising over $3 billion from U.S. and global investors on the basis of false and misleading statements about anti\u2011bribery compliance. Arrest warrants were reportedly issued for Gautam Adani and his nephew Sagar Adani, and the U.S. Securities and Exchange Commission filed related civil charges alleging a \u201cmassive bribery scheme\u201d involving funds raised from U.S. investors. The Adani Group and its executives have denied the allegations, calling them baseless, and have stated they will contest the charges; the group has also emphasized that its listed entities themselves have not been indicted, and that all defendants are presumed innocent unless proven guilty. The case presents significant corruption, fraud, and securities\u2011law risk exposure for the Adani Group and its leadership, with ongoing criminal and regulatory proceedings in the U.S. and related political and reputational fallout in India and abroad.",
+                        "sources": [
+                            {
+                                "url": "https://www.justice.gov/usao-edny/pr/billionaire-chairman-conglomerate-and-seven-other-senior-business-executives-indicted",
+                                "source_name": "U.S. Department of Justice \u2013 Eastern District of New York",
+                                "published_date": "2024-11-20"
+                            },
+                            {
+                                "url": "https://www.cnbc.com/2024/11/20/billionaire-gautam-adani-charged-in-new-york-with-massive-fraud.html",
+                                "source_name": "CNBC",
+                                "published_date": "2024-11-20"
+                            },
+                            {
+                                "url": "https://www.theguardian.com/business/2024/nov/20/gautam-adani-charged-alleged-bribes",
+                                "source_name": "The Guardian",
+                                "published_date": "2024-11-20"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "U.S. federal prosecutors unsealed a criminal indictment charging the Adani Group chairman and senior executives with conspiracies to commit securities and wire fraud and with FCPA-related bribery, alleging payment of $250\u2013265 million to secure contracts and related SEC civil charges. These are ongoing, business\u2011related criminal allegations and prosecutions, which directly match the inclusion rules for investigations or allegations of criminal conduct."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-11-26T22:59:42.694035",
+        "entity": "Tata Consultancy Services Limited",
+        "metadata": {
+            "Country": "India",
+            "CIN": "L22210MH1995PLC084781"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "Tata Consultancy Services internal \u2018bribes\u2011for\u2011jobs\u2019 recruitment scandal involving staffing firms",
+                        "summary": "In 2023, Tata Consultancy Services Limited (TCS) investigated whistleblower allegations that certain executives in its Resource Management/Resource Allocation Group accepted improper benefits from external staffing firms in exchange for favouring them in the allocation of contractual recruitment mandates. Reports indicated that commissions or other gratifications were allegedly paid by these firms to secure placements for contract workers, with some estimates suggesting potential illicit gains of around \u20b9100 crore, though the company later stated it found no fraud by or against TCS itself. Following internal inquiries triggered by two whistleblower complaints in February and March 2023, TCS terminated or banned multiple employees and blacklisted several staffing firms, ultimately reporting that 16 employees were separated for code\u2011of\u2011conduct violations and six business associate firms were debarred from future business. Senior leadership publicly characterised the conduct as a serious breach of ethical standards and announced plans to tighten supplier and staffing\u2011firm management controls. The matter has been treated as an internal misconduct and bribery\u2011type issue within the recruitment process, with no indication from the cited sources of criminal charges against the company, but it remains relevant from an integrity and corruption\u2011risk perspective.",
+                        "sources": [
+                            {
+                                "url": "https://indianexpress.com/article/business/companies/tcs-cracks-whip-against-6-staffers-in-bribery-case-8693378/",
+                                "source_name": "The Indian Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.financialexpress.com/business/industry-tcs-cracks-whip-in-bribery-case-3148599/",
+                                "source_name": "The Financial Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.globalconsultantsreview.com/news/tcs-bribery-scam-16-employees-found-guilty-and-6-staffing-firms-debarred-nwid-3557.html",
+                                "source_name": "Consultants Review",
+                                "published_date": "2023-10-16"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "The story describes whistleblower allegations and an internal investigation that certain TCS executives accepted improper benefits/commissions from external staffing firms in exchange for favouring them, which constitutes commercial bribery/kickbacks. The company conducted inquiries, separated employees and debarred firms, and the matter is recorded as an allegation/investigation even though no criminal charges against the company were reported."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "Whistleblowers and ex-employees allege systemic US visa fraud and discriminatory staffing practices at Tata Consultancy Services",
+                        "summary": "Since early 2025, Tata Consultancy Services Limited (TCS) has faced renewed allegations from former US-based employees that it engaged in systemic visa fraud and discriminatory employment practices. A whistleblower and other ex-employees claim TCS misclassified frontline staff as managers and falsified internal organisational charts to obtain L\u20111A visas, allegedly to bypass stricter H\u20111B rules and US labour protections; these claims are being pursued through lawsuits and appeals, and have been detailed in investigative reporting. Parallel complaints and litigation in the US allege that TCS disproportionately favours South Asian and Indian workers on temporary visas, while older, non\u2011South\u2011Asian and non\u2011Indian employees were targeted for layoffs or denied opportunities, prompting scrutiny by the US Equal Employment Opportunity Commission (EEOC). Additional lawsuits filed in recent years assert that TCS\u2019s US workforce composition reflects systemic bias, though the company has obtained favourable rulings narrowing or defeating some discrimination claims. TCS has publicly denied all allegations of visa fraud and unlawful discrimination, stating that it complies with applicable immigration and employment laws and maintains equal\u2011opportunity policies.",
+                        "sources": [
+                            {
+                                "url": "https://www.livemint.com/companies/news/tcs-ex-employee-allege-visa-fraud-game-system-coverup-bypass-h-1b-rules-us-labour-laws-donald-trump-whistleblower-report-11739858063495.html",
+                                "source_name": "Livemint",
+                                "published_date": "2025-02-18"
+                            },
+                            {
+                                "url": "https://www.hindustantimes.com/india-news/tcs-faces-visa-fraud-allegations-amid-trump-era-scrutiny-report-101739847674941.html",
+                                "source_name": "Hindustan Times",
+                                "published_date": "2025-02-18"
+                            },
+                            {
+                                "url": "https://www.business-standard.com/companies/news/tcs-accused-of-firing-us-workers-in-favour-of-indians-on-h-1b-visa-124041200156_1.html",
+                                "source_name": "Business Standard",
+                                "published_date": "2024-04-12"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "The story describes credible allegations and litigation accusing TCS of visa fraud (misclassifying staff and falsifying organisational charts to obtain L\u20111A visas) and notes investigative reporting and ongoing legal scrutiny, which fit the inclusion of allegations of fraud or criminal conduct in the course of business."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-11-27 13:32:18",
+        "entity": "Tata Consultancy Limited",
+        "metadata": {
+            "Country": "India",
+            "CIN": "L22210MH1995PLC084781"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": []
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": []
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-11-27 13:33:22",
+        "entity": "TATA CONSULTANCY SERVICES LIMITED",
+        "metadata": {
+            "Country": "India",
+            "CIN": "L22210MH1995PLC084781"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "TCS recruitment \u2018bribes\u2011for\u2011jobs\u2019 scandal involving staffing firms and resource management executives",
+                        "summary": "In 2023, Tata Consultancy Services Limited (TCS) was implicated in a recruitment-related bribery scandal after whistleblower complaints alleged that senior executives in its Resource Management Group accepted illicit commissions and other favours from external staffing firms in exchange for favouring their candidates for contractual positions. Internal investigations reportedly led TCS to dismiss or ban at least four to six employees and blacklist three to six staffing firms, while additional staff remained under scrutiny. Media reports, citing internal sources, suggested that the alleged scheme may have operated for years and could have generated improper gains estimated at around Rs 100 crore for those involved. TCS publicly stated that recruitment activities are not handled by the Resource Management Group and rejected characterisation of the matter as a systemic recruitment scam, while acknowledging unethical conduct by certain individuals and announcing a review and tightening of supplier management and ethical controls. No public enforcement action by regulators has been reported to date, but the incident raises corruption, conflict-of-interest, and third\u2011party risk concerns around TCS\u2019s contractor hiring processes.",
+                        "sources": [
+                            {
+                                "url": "https://www.business-standard.com/companies/news/bribes-for-job-scam-uncovered-at-tcs-rs-100-crore-involved-123062300176_1.html",
+                                "source_name": "Business Standard",
+                                "published_date": "2023-06-23"
+                            },
+                            {
+                                "url": "https://indianexpress.com/article/business/companies/tcs-cracks-whip-against-6-staffers-in-bribery-case-8693378/",
+                                "source_name": "The Indian Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.hindustantimes.com/business/tata-consultancy-services-recruitment-bribery-case-n-chandrasekaran-employees-sacked-staffing-firm-banned-101688054063801.html",
+                                "source_name": "Hindustan Times",
+                                "published_date": "2023-06-29"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "Whistleblower complaints and media reports allege senior TCS executives accepted illicit commissions and favours from external staffing firms in exchange for favouring their candidates, and internal investigations led to dismissals, bans and blacklisting of firms with alleged improper gains of around Rs 100 crore. These facts describe allegations of commercial bribery/kickbacks to secure business advantages and match the inclusion criteria for BRI_01."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "US courts impose $194 million damages on TCS in CSC trade secrets misappropriation case",
+                        "summary": "Tata Consultancy Services Limited (TCS) faces significant legal and financial exposure in the United States after courts found it liable for misappropriation of trade secrets belonging to Computer Sciences Corporation (now part of DXC Technology). In June 2024, the U.S. District Court for the Northern District of Texas ordered TCS to pay approximately $194.2 million, comprising compensatory, exemplary (punitive) damages and prejudgment interest, and also granted injunctive relief restricting certain activities. In November 2025, the U.S. Court of Appeals for the Fifth Circuit issued an adverse ruling for TCS, confirming the district court\u2019s decision on damages while vacating and remanding the injunction for reassessment. The case centers on allegations that TCS improperly accessed CSC\u2019s licensed insurance software via former Transamerica employees to develop a competing insurance platform, which the court found unjustly enriched TCS. TCS has publicly stated that it believes the damages are legally excessive and is pursuing further legal remedies, but the confirmed award represents a material adverse judgment involving findings of trade secret misappropriation, a form of commercial fraud-related misconduct.",
+                        "sources": [
+                            {
+                                "url": "https://www.ndtv.com/india-news/us-court-levies-194-million-penal-charges-on-tcs-report-5892211",
+                                "source_name": "NDTV",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.financialexpress.com/business/setback-for-tcs-us-court-upholds-194-million-penalty-in-csc-trade-secrets-case-4053609/",
+                                "source_name": "The Financial Express",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.livemint.com/companies/news/tata-consultancy-services-faces-legal-setback-as-us-court-upholds-194-million-damages-case-194-million-tcs-damages/amp-11763958063367.html",
+                                "source_name": "Mint",
+                                "published_date": "2025-11-24"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "A U.S. court found TCS liable for misappropriation of trade secrets and ordered substantial damages, and the story characterises this as a material adverse judgment involving findings of trade-secret misappropriation\u2014a form of commercial fraud-related misconduct. These confirmed judicial findings and the ongoing legal remedies align with CRI_01's inclusion of credible allegations or findings of fraud or similar offences in the course of the entity's business."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2025-12-08 23:33:15",
+        "entity": "Tata Consultancy Service Limited",
+        "metadata": {
+            "Country": "India"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "Tata Consultancy Services internal \u2018bribes\u2011for\u2011jobs\u2019 scandal involving staffing firms",
+                        "summary": "In 2023, Tata Consultancy Services (TCS) faced whistleblower allegations that certain executives in its Resource Management Group accepted commissions or other favours from external staffing firms in exchange for preferential allocation of contract hiring mandates. Following internal investigations triggered by complaints in February and March 2023, TCS disclosed that multiple employees had violated its code of conduct by favouring specific business associates in the recruitment of contractual workers. The company initially reported sacking four to six employees and blacklisting several staffing firms, and later confirmed that a total of 19 employees were implicated, with 16 terminated and three removed from the resource management function. TCS has stated in exchange filings that the matter did not involve fraud by or against the company or have a material financial impact, but it has tightened supplier and staffing oversight and emphasized ethical conduct expectations. The incident represents a third\u2011party recruitment bribery and conflict\u2011of\u2011interest risk within TCS\u2019s hiring processes rather than a classic customer\u2011facing bribery of public officials.",
+                        "sources": [
+                            {
+                                "url": "https://timesofindia.indiatimes.com/city/bengaluru/tcs-sacks-four-execs-for-bribery-in-contract-hiring/articleshow/101230487.cms",
+                                "source_name": "Times of India",
+                                "published_date": "2023-06-24"
+                            },
+                            {
+                                "url": "https://indianexpress.com/article/business/companies/tcs-cracks-whip-against-6-staffers-in-bribery-case-8693378/",
+                                "source_name": "The Indian Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.hindustantimes.com/business/bribeforjobs-tcs-fires-16-employees-after-probe-finds-involvement-three-removed-from-resource-group-101697426177719.html",
+                                "source_name": "Hindustan Times",
+                                "published_date": "2023-10-16"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "Whistleblower allegations and subsequent internal investigations found that executives accepted commissions or favours from external staffing firms in exchange for preferential allocation of contract hiring mandates, which fits the inclusion rule covering commercial bribery or kickbacks; TCS disclosed multiple employees implicated and disciplinary actions taken."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "US courts find Tata Consultancy Services liable for willful trade secret misappropriation, uphold ~$194 million award",
+                        "summary": "Tata Consultancy Services Limited (TCS) has been found liable in the United States for misappropriating trade secrets belonging to Computer Sciences Corp. (CSC) related to insurance and banking software platforms. In November 2023, a federal jury in Texas concluded that TCS stole CSC\u2019s source code and confidential information and used it to develop competing life insurance software, awarding $70 million for unjust enrichment and $140 million in punitive damages based on a finding of willful and malicious conduct. In June 2024, the U.S. District Court for the Northern District of Texas entered judgment of approximately $194.2 million, including compensatory, exemplary and interest components, for trade secret misappropriation. In November 2025, a U.S. Court of Appeals upheld the damages award while vacating a related injunction and remanding that aspect for further consideration, leaving TCS facing a substantial confirmed financial penalty and ongoing injunctive risk exposure. The matter represents a significant adverse legal finding involving intellectual property misuse and associated governance and compliance risks for TCS.",
+                        "sources": [
+                            {
+                                "url": "https://www.jdsupra.com/legalnews/jury-orders-tata-to-pay-210-million-for-5170846/",
+                                "source_name": "JDSupra (Jenner & Block summary of U.S. litigation)",
+                                "published_date": "2024-02-01"
+                            },
+                            {
+                                "url": "https://www.livemint.com/companies/news/why-a-us-court-ordered-tcs-to-pay-194-million-in-fine-in-a-case-of-trade-secret-misappropriation/amp-11718595039178.html",
+                                "source_name": "Mint",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.hindustantimes.com/business/explained-tcs-194-million-trade-secret-lawsuit-in-us-and-its-financial-impact-101763958770660.html",
+                                "source_name": "Hindustan Times",
+                                "published_date": null
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "A U.S. federal jury found TCS willfully misappropriated CSC\u2019s trade secrets and the court entered a substantial judgment, representing a credible legal finding of illicit conduct and significant governance/compliance risk that falls within the scope of investigations/credible allegations of misconduct in the inclusion rules."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-01-07 16:28:45",
+        "entity": "Tata Services Limited",
+        "metadata": {
+            "Country": "India ",
+            "CIN": "U51909MH1957PLC010942"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": []
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": []
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-01-07 16:30:37",
+        "entity": "Tata Consultancy Services Limited",
+        "metadata": {
+            "Country": "India ",
+            "CIN": "L22210MH1995PLC084781"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "TCS recruitment \u2018bribes\u2011for\u2011jobs\u2019 scandal involving staffing firms and internal resource management staff",
+                        "summary": "From early 2023, Tata Consultancy Services Limited (TCS) faced whistleblower allegations that certain employees in its Resource Management/Resource Allocation Group accepted improper benefits from empanelled staffing firms in exchange for favouring their candidates for contractual roles. Following internal investigations triggered by complaints in February and March 2023, TCS identified employees who had violated its code of conduct by favouring specific business associate firms, and acknowledged it could not fully quantify the advantages received. Public statements by Tata Sons\u2019 chair at the June 2023 AGM confirmed that at least six employees were banned and six staffing firms were blacklisted, with three additional staff placed under scrutiny, and that the issues related to activities in both India and the United States. Subsequent disclosures in 2023 indicated that TCS ultimately separated 16 employees and removed three from the resource management function, and permanently debarred six vendor firms and their affiliates from future business, in connection with the same recruitment\u2011related misconduct. The company has characterised the matter as a breach of internal ethical standards rather than a systemic recruitment \u2018scam\u2019, and has stated it is tightening supplier and recruitment controls to prevent recurrence.",
+                        "sources": [
+                            {
+                                "url": "https://indianexpress.com/article/business/companies/tcs-cracks-whip-against-6-staffers-in-bribery-case-8693378/",
+                                "source_name": "The Indian Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.financialexpress.com/business/industry-tcs-cracks-whip-in-bribery-case-3148599/",
+                                "source_name": "The Financial Express",
+                                "published_date": "2023-06-30"
+                            },
+                            {
+                                "url": "https://www.globalconsultantsreview.com/news/tcs-bribery-scam-16-employees-found-guilty-and-6-staffing-firms-debarred-nwid-3557.html",
+                                "source_name": "Consultants Review",
+                                "published_date": "2023-10-16"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "Whistleblower allegations and internal investigations indicate TCS employees accepted improper benefits from empanelled staffing firms in exchange for favouring their candidates, constituting commercial bribery/kickbacks. The ensuing employee bans, separations and vendor debarments corroborate the allegation of corrupt payments to secure business advantages."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "Tata Consultancy Services hit with US$194 million US court judgment for trade secret misappropriation",
+                        "summary": "In June 2024, a US District Court in the Northern District of Texas ordered Tata Consultancy Services Limited (TCS) to pay approximately US$194.2 million in a case involving alleged misappropriation of trade secrets belonging to Computer Sciences Corporation (now part of DXC Technology). The court found that TCS had been unjustly enriched by using CSC\u2019s proprietary software to develop its own banking platform, awarding compensatory, exemplary and interest damages. TCS disclosed the adverse judgment in a stock exchange filing and indicated its intention to appeal and seek review of the decision. The matter raises material legal and financial exposure for TCS and involves findings of serious intellectual property and trade secret violations in a key overseas jurisdiction. While the case is civil in nature, the scale of the award and the underlying conduct are relevant from a fraud and misconduct risk perspective for customer due diligence assessments.",
+                        "sources": [
+                            {
+                                "url": "https://www.livemint.com/companies/news/why-a-us-court-ordered-tcs-to-pay-194-million-in-fine-in-a-case-of-trade-secret-misappropriation/amp-11718595039178.html",
+                                "source_name": "Mint",
+                                "published_date": "2024-06-20"
+                            },
+                            {
+                                "url": "https://timesofindia.indiatimes.com/technology/tech-news/tcs-fined-rs-16000-crore-by-the-us-court-on-complaint-of-this-us-based-company-heres-the-companys-bse-filing/amp_articleshow/111036958.cms",
+                                "source_name": "The Times of India",
+                                "published_date": "2024-06-21"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": null,
+                                "name": null,
+                                "rationale": "The matter described is a civil court judgment for trade-secret misappropriation and unjust enrichment, not an allegation or investigation of criminal conduct as defined by CRI_01. There are also no allegations of anticompetitive behavior relevant to CRI_02, so neither provided flag applies."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timestamp": "2026-03-05 22:50:15",
+        "entity": "Carillion plc",
+        "metadata": {
+            "Company Number": "03782379"
+        },
+        "results": [
+            {
+                "scope": "Bribery/Things of Value",
+                "stories": [
+                    {
+                        "headline": "Carillion acknowledges likely \u2018gift-giving for advantage (bribery)\u2019 in past conduct",
+                        "summary": "Media reporting on the collapse of Carillion plc notes that the company itself acknowledged that \u2018gift-giving for advantage (bribery)\u2019 was likely to have occurred in its operations. This disclosure appears in the context of wider criticism of Carillion\u2019s governance, risk management and treatment of stakeholders, but is not accompanied in open sources by details of specific bribery schemes, counterparties or enforcement outcomes. The reporting frames the issue as part of broader concerns about Carillion\u2019s corporate culture and controls rather than as a standalone prosecuted bribery case. No recent (last five years) regulatory or criminal bribery enforcement actions against Carillion plc specifically for donations or things-of-value bribery were identified in public sources, although the company\u2019s collapse has prompted extensive regulatory scrutiny on other grounds. On the available information, the bribery-related risk is therefore characterised mainly by this admission and associated governance concerns, rather than by documented, adjudicated bribery offences.",
+                        "sources": [
+                            {
+                                "url": "https://www.vice.com/en/article/the-carillion-scandal-is-proof-that-big-business-should-not-run-government-services/",
+                                "source_name": "Vice",
+                                "published_date": "2018-01-17"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "BRI_01",
+                                "name": "Investigations or Allegations of Bribery",
+                                "rationale": "Carillion has publicly acknowledged that 'gift-giving for advantage (bribery)' was likely to have occurred in its operations, which constitutes an allegation of bribery despite lack of detailed schemes or enforcement outcomes. This admission and the related governance concerns align with the definition of investigations or allegations of bribery captured by BRI_01."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "scope": "Criminal Behavior",
+                "stories": [
+                    {
+                        "headline": "Regulators sanction former Carillion leadership over misleading financial reporting and competition law breaches",
+                        "summary": "Carillion plc, a major UK construction and outsourcing group that collapsed in January 2018, has been the subject of extensive regulatory and enforcement action focused on misleading financial disclosures and anticompetitive conduct. The UK Financial Conduct Authority (FCA) recently fined and publicly censured former Carillion finance directors for recklessly publishing announcements that did not accurately or fully disclose the company\u2019s deteriorating financial position before its collapse, finding that investors were misled about the true state of the business. Separately, the UK Insolvency Service has secured director disqualification undertakings and orders against former senior executives, including ex\u2011CEO Richard Howson, citing false accounting, profit overstatement, understatement of net debt and the concealment of Carillion\u2019s true financial obligations from auditors; Howson was disqualified for eight years for causing the company to enter into transactions that generated artificial income and masked liabilities. In an earlier but still relevant competition case, the UK Office of Fair Trading fined Carillion and numerous other construction firms for bid\u2011rigging and cover pricing in public and private sector tenders, characterising the conduct as cartel\u2011type behaviour that distorted competition and kept prices artificially high. Parliamentary inquiries and subsequent regulatory materials have also referred to ongoing Serious Fraud Office investigations into the circumstances of Carillion\u2019s collapse, although no criminal convictions against the company itself have been reported. Overall, the available record highlights significant concerns around Carillion\u2019s financial reporting integrity and compliance with competition law, with multiple findings of misconduct against former directors and substantial regulatory penalties imposed.",
+                        "sources": [
+                            {
+                                "url": "https://www.fca.org.uk/news/press-releases/fca-fines-former-finance-directors-carillion-plc",
+                                "source_name": "Financial Conduct Authority",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.gov.uk/government/news/former-ceo-of-carillion-disqualified",
+                                "source_name": "UK Government (GOV.UK)",
+                                "published_date": null
+                            },
+                            {
+                                "url": "https://www.theguardian.com/business/2008/apr/17/construction.carillionbusiness",
+                                "source_name": "The Guardian",
+                                "published_date": "2008-04-17"
+                            }
+                        ],
+                        "matched_flags": [
+                            {
+                                "code": "CRI_01",
+                                "name": "Investigations or Allegations of Criminal Behavior",
+                                "rationale": "The summary describes enforcement and regulatory findings (director disqualifications, FCA censure) for false accounting, profit overstatement and concealment of liabilities, and references ongoing Serious Fraud Office investigations\u2014constituting allegations and probes of fraud and related misconduct in the course of the company\u2019s business."
+                            },
+                            {
+                                "code": "CRI_02",
+                                "name": "Investigations or Allegations of Anticompetitive Behavior",
+                                "rationale": "The summary states the UK Office of Fair Trading fined Carillion and other firms for bid\u2011rigging and cover pricing\u2014cartel-type conduct and price-fixing in tenders\u2014which fits inclusion rules for anticompetitive investigations and fines."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
