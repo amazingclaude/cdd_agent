@@ -25,6 +25,7 @@ The interface is built with **Streamlit**, allowing analysts to run screening qu
 
 # Project Structure
 
+```
 cdd_agent/
 │
 ├── app.py # Streamlit frontend
@@ -37,7 +38,7 @@ cdd_agent/
 ├── requirements.txt # Optional pip dependencies
 ├── .gitignore
 └── README.md
-
+```
 
 ---
 
